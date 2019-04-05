@@ -12,9 +12,24 @@ const feedBack = {
     support: '',
     comments: ''
 }
+
+// switch (action.type) {
+//     case 'SET_FEELING':
+//         return {
+//             ...state, feeling: action.payload
+//         };
+//     case 'SET_UNDERSTANDING':
+//         return {
+//             ...state, understanding: action.payload
+//         }
+
+//     default:
+//         return state;
+// }
+
 const mainReducer = (state = feedBack, action) => {
     if (action.type === 'SET_FEELING') {
-        return {...state, feeling:action.payload}
+        return { ...state, feeling: action.payload }
     }
     if (action.type === 'SET_UNDERSTANDING') {
         return { ...state, understanding: action.payload }

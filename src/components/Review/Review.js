@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import Axios from 'axios';
-import { Link } from "react-router-dom";
 
 class Review extends Component {
+
+    //ternary = condition ? if true this happens : else this happens
 
     addToData = () => {
 
@@ -25,6 +26,7 @@ class Review extends Component {
             })
         }
     }
+
     render() {
 
         return (
